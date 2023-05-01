@@ -15,7 +15,17 @@
     "jsx": "preserve",
     "incremental": true,
     "paths": {
-      "["components/*","customNext/*","styles/*","types/*","utils/*"]": ["./src/*"]
+      "components/*": ["./src/components/*"],
+      "customNext/*": ["./src/nextComponents/*"],
+      "fakeData/*": ["./src/fake-data/*"],
+      "icons/*": ["./src/icons/*"],
+      "layout": ["./src/layout/index.ts"],
+      "lotties": ["./src/lottieData/index.ts"],
+      "nextComponent": ["./src/nextComponent/index.ts"],
+      "redux/*": ["./src/redux/*"],
+      "styles/*": ["./src/styles/*"],
+      "types/*": ["./src/types/*"],
+      "utils/*": ["./src/utils/*"]
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
