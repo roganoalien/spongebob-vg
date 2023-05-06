@@ -16,7 +16,7 @@ const UnityContainer = () => {
 
 		const theInterval = setInterval(() => {
 			counter += 1;
-			if (counter === 30) {
+			if (counter === 120) {
 				router.reload();
 				clearInterval(theInterval);
 			}
