@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Inter } from "next/font/google";
 import { AnimatePresence, motion } from "framer-motion";
 import VideoContainer from "components/VideoContainer";
@@ -8,6 +8,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
 	const [showVideo, setShowVideo] = useState<boolean>(true);
+
 	return (
 		<div className="relative h-screen w-screen bg-gray-800">
 			<AnimatePresence mode="wait">
