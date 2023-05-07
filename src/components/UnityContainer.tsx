@@ -2,13 +2,15 @@ import { useRouter } from "next/router";
 import { useEffect } from "react";
 import { Unity, useUnityContext } from "react-unity-webgl";
 
+const fileName = "SpongeBobMay7Build";
+
 const UnityContainer = () => {
 	const router = useRouter();
 	const { unityProvider } = useUnityContext({
-		loaderUrl: "/SpongeBobMayV.loader.js",
-		dataUrl: "/SpongeBobMayV.data",
-		frameworkUrl: "/SpongeBobMayV.framework.js",
-		codeUrl: "/SpongeBobMayV.wasm"
+		loaderUrl: `/${fileName}.loader.js`,
+		dataUrl: `/${fileName}.data`,
+		frameworkUrl: `/${fileName}.framework.js`,
+		codeUrl: `/${fileName}.wasm`
 	});
 
 	useEffect(() => {
@@ -16,7 +18,7 @@ const UnityContainer = () => {
 
 		const theInterval = setInterval(() => {
 			counter += 1;
-			if (counter === 120) {
+			if (counter === 45) {
 				router.reload();
 				clearInterval(theInterval);
 			}
