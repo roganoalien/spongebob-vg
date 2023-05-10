@@ -1972,6 +1972,11 @@ react-dom@18.2.0:
     loose-envify "^1.1.0"
     scheduler "^0.23.0"
 
+react-fullscreen-crossbrowser@^1.1.2:
+  version "1.1.2"
+  resolved "https://registry.yarnpkg.com/react-fullscreen-crossbrowser/-/react-fullscreen-crossbrowser-1.1.2.tgz#643380a71c0de40531c22b75b29f7553bd4a972d"
+  integrity sha512-GA9tVJbU8e8iuYPI1h6PemtKDeQgnsgcRTVhC/8L7NpzMj7WBtzWSiqy6rzaXRAItDmuw7D2WgmZozdIBV+uVg==
+
 react-is@^16.13.1:
   version "16.13.1"
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-16.13.1.tgz#789729a4dc36de2999dc156dd6c1d9c18cea56a4"
