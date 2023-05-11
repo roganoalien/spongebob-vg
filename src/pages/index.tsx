@@ -1,11 +1,8 @@
-import { useEffect, useState } from "react";
-import { Inter } from "next/font/google";
+import { useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import VideoContainer from "components/VideoContainer";
 import UnityContainer from "components/UnityContainer";
 import Fullscreen from "react-fullscreen-crossbrowser";
-
-const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
 	const [showVideo, setShowVideo] = useState<boolean>(true);
